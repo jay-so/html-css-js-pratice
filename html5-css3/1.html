@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>웹 페이지의 제목</title>
+  </head>
+  <>
+    <form name="이름" action="sign.jsp" method="post">
+      <label></label>
+      <label for="name">이름:</label><br />
+      <input type="text" id="name" name="name" value="Suan" size="20" />
+      <select id="food" name="food" multiple>
+        <optgroup label="음식">
+          <option value="pizza" selected>피자</option>
+          <option value="hamburger">햄버거</option>
+          <option value="pasta">파스타</option>
+        </optgroup>
+        <optgroup label="후식">
+          <option value="cola">콜라</option>
+          <option value="coffee">커피</option>
+          <option value="icecream">아이스크림</option>
+        </optgroup></select
+      ><br />
+      <textareas name="article" rows="20" cols="30"> 텍스트 </textareas>
+      <button>Button</button><br />
+      <form>
+        <fieldset>
+          <legend>개인정보</legend>
+          <label for="name">이름:</label><br />
+          <input type="text" id="name" name="name" value="Suan" /><br />
+          <label for="affiliation">소속:</label><br />
+          <input
+            type="text"
+            id="affiliation"
+            name="affiliation"
+            value="SuanLab"
+          />
+          <br /><br />
+          <input type="submit" value="전송" />
+        </fieldset>
+        <form>
+          <input list="browsers" />
+          <datalist id="browsers">
+            <option value="Chrome"></option>
+            <option value="Firefox"></option>
+            <option value="Internet Explorer"></option>
+            <option value="Opera"></option>
+            <option value="Safari"></option>
+          </datalist>
+        </form>
+      </form>
+    </form>
+    <form>
+      <form oninput="r.value=parseInt(x.value)*parseInt(y.value)">
+        <input type="number" id="x" name="x" value="10" />
+        *
+        <input type="number" id="y" name="y" value="20" />
+        =
+        <output name="r" for="x y"></output>
+        <br /><br />
+        <input type="submit" />
+      </form>
+    </form>
+    <input type="text" name="text" size="20" />
+    <input type="button" value="Button" />
+    <input type="radio" name="gender" value="male" />남자
+    <input type="radio" name="gender" value="female" />여자
+    <input type="checkbox" name="food" value="pizza" />피자<br />
+    <input type="checkbox" name="food" value="hamburger" />햄버거<br />
+    <input type="checkbox" name="food" value="pasta" />파스타<br />
+    <input type="date" name="date" min="2020-01-01" max="2020-12-31" />
+    <input type="month" id="month" name="month" />
+    <input type="week" id="week" name="week" />
+    <input type="time" id="time" name="time" />
+    <input type="datetime-local" id="datetime" name="datetime" />
+    <input type="color" name="color" />
+    <input type="number" name="num" min="0" max="1000" />
+    <input type="range" name="point" min="0" max="100" />
+    <input type="email" name="email" />
+    <input type="url" name="myUrl" />
+    <input
+      type="tel"
+      id="phone"
+      name="phone"
+      pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}"
+    />
+    <input type="file" id="myfile" name="myfile" />
+    <form>
+      <label for="name">이름:</label><br>
+      <input type="text" id="name" name="name" value="Suan"><br>
+      <label for="affiliation">소속:</label><br>
+      <input type="text" id="affiliation" name="affiliation" value="SuanLab"><br><br>
+      <input type="submit" value="전송">
+      <input type="reset" value="초기화">
+    </form>
+  </body>
+</html>
