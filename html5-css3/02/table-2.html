@@ -5,6 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid #ccc;
+      }
+      th {
+        padding: 15px; /* 셀 테두리와 내용 사이의 간격(패딩) */
+      }
+      tr > td:nth-child(odd) {
+        width: 120px; /* 홀수번째 열의 너비 : 120px */
+      }
+      tr > td:nth-child(even) {
+        width: 300px; /* 짝수번째 열의 너비 : 120px */
+      }
+    </style>
   </head>
   <body>
     <table>
